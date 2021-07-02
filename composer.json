@@ -1,0 +1,13 @@
+{
+    "name": "evgen/loftschool-week3",
+    "autoload": {
+        "psr-4": {"App\\": "app/", "Base\\": "src/"}
+    },
+    "authors": [
+        {
+            "name": "Evegnii",
+            "email": "ga@ga.com"
+        }
+    ],
+    "require": {}
+}
