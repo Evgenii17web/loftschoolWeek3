@@ -38,7 +38,7 @@ class Blog extends AbstractController
 
         $text = (string) $_POST['text'];
         if (!$text) {
-            $this->error('Сообщение не может быть пустым');
+            return $this->error();
         }
 
         $message = new Message([
@@ -54,5 +54,10 @@ class Blog extends AbstractController
         $message->save();
         $this->redirect('/blog');
 
+    }
+
+    private function error()
+    {
+        return ERROR_MESSAGE_EMPTY;
     }
 }

@@ -47,19 +47,19 @@ class Login extends AbstractController
         $password2 = (string) $_POST['password_2'];
 
         if (!$name || !$password) {
-            return 'Не заданы имя и пароль';
+            return ERROR_NAME_AND_PASSWORD;
         }
 
         if (!$email) {
-            return 'Не задан email';
+            return ERROR_EMAIL;
         }
 
         if ($password !== $password2) {
-            return 'Введенные пароли не совпадают';
+            return ERROR_MISMATCH_PASSWORD;
         }
 
         if (mb_strlen($password) < 5) {
-            return 'Пароль слишком короткий';
+            return ERROR_SHORT_PASSWORD;
         }
 
         $userData = [
