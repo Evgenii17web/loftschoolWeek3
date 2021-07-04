@@ -1,5 +1,5 @@
 {
-    "name": "evgen/loftschool-week3",
+    "name": "evgen/mvc",
     "autoload": {
         "psr-4": {"App\\": "app/", "Base\\": "src/"}
     },
@@ -9,5 +9,8 @@
             "email": "ga@ga.com"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-pdo": "*",
+      "ext-mbstring": "*"
+    }
 }

@@ -1,9 +1,6 @@
 <?php
 
-namespace Base;
-
-
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'loftschoolWeek3');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'root');
+const DB_HOST = 'localhost';
+const DB_NAME = 'mvc';
+const DB_USER = 'root';
+const DB_PASSWORD = 'root';
