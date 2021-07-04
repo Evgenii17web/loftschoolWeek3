@@ -8,7 +8,6 @@ class Admin extends AbstractController
 {
     public function preDispatch()
     {
-        parent::preDispatch();
         if(!$this->getUser() || !$this->getUser()->isAdmin()) {
             $this->redirect('/');
         }

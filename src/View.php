@@ -6,10 +6,6 @@ class View
     private $templatePath;
     private $data;
 
-    public function __construct()
-    {
-    }
-
     public function setTemplatePath(string $path)
     {
         $this->templatePath = $path;
@@ -17,6 +13,10 @@ class View
 
     public function __get($name)
     {
+        if (!$name) {
+            return ERROR_INDEX;
+        }
+
         return $this->data[$name];
     }
 

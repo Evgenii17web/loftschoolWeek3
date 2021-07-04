@@ -26,10 +26,8 @@ class Application
             $session = new Session();
             $session->init();
             $controller->setSession($session);
-            $controller->preDispatch();
+//            $controller->preDispatch();
             $result = $controller->$action();
-
-            // ...
 
             echo $result;
         } catch (RedirectException $e) {
