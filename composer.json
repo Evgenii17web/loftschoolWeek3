@@ -12,6 +12,8 @@
     "require": {
         "ext-pdo": "*",
         "ext-mbstring": "*",
-        "swiftmailer/swiftmailer": "^6.0"
+        "swiftmailer/swiftmailer": "^6.0",
+        "twig/twig": "^2.0",
+        "ext-dom": "*"
     }
 }
