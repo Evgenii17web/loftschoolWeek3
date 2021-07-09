@@ -13,7 +13,8 @@
         "ext-pdo": "*",
         "ext-mbstring": "*",
         "swiftmailer/swiftmailer": "^6.0",
-        "twig/twig": "^2.0",
-        "ext-dom": "*"
+        "twig/twig": "^3.0",
+        "ext-dom": "*",
+        "intervention/image":"dev-master"
     }
 }

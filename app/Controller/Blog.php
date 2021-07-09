@@ -60,4 +60,9 @@ class Blog extends AbstractController
     {
         return ERROR_MESSAGE_EMPTY;
     }
+
+    public function twig()
+    {
+        return $this->view->renderTwig('test.twig', ['var1' => 'var1', 'var2' => 'var2']);
+    }
 }
